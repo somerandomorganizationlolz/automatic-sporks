@@ -978,7 +978,7 @@ do
 			}
 
 			-- // Dragging
-			Library:Connection(AccentOutline.MouseButton1Down, function()
+			Library:Connect(AccentOutline.MouseButton1Down, function()
 				local Location = game:GetService("UserInputService"):GetMouseLocation()
 				Window.Dragging[1] = true
 				Window.Dragging[2] = UDim2.new(0, Location.X - AccentOutline.AbsolutePosition.X, 0, Location.Y - AccentOutline.AbsolutePosition.Y)
